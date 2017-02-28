@@ -12,6 +12,3 @@ def q2_plot():
     plt.yticks((1, 2, 3, 4, 5), ('Random', 'PA', 'Group', 'WS', 'Coauthorship'))
     plt.semilogx(xdata, ydata, marker='.', linestyle = 'None', color='b')
     plt.savefig("example.png")
-
-
-            
