@@ -131,14 +131,14 @@ def plot_diameter_vs_p(num_groups, nodes_per_group, external_prob, trials=1, tit
 # average degree distribution 
 # plot ^ that
 
-graph = make_group_graph(20,20,0.25,0.5)
+graph = make_group_graph(20,20,0.1,0.1)
 
 print(diameter(graph))
 
 plot_diameter_vs_p(20,20,0.5)
 
 # check plot things
-"""
+
 print ("construct group graphs with 400 vertices, divided into 20 groups of 20")
 print ("let p take the values 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, and q=0.5 - p")
 print ("for each value create 100 graphs, find on average how many vertices have degree d, and plot the distribution")
@@ -155,4 +155,4 @@ dist = average_degree_distribution_group_graphs(2, 200, 0.4, 0.1, 100)
 plot_degree_distribution(dist, "Degree Distribution of Group Graph with m=2, k=200, p=0.4","Q1_group_graph_m=2_degrees.png")
 print ("looking at the figures produced, notice that the shapes of the distributions are all very similar and the degrees are all very close to the average")
 print ()
-"""
+
