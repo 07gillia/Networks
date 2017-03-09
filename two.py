@@ -115,18 +115,25 @@ def make_random_graph(num_nodes, prob):
     twice: once to add an edge (i,j) with probability prob, and then to add an
     edge (j,i) with probability prob. 
     """
-    #initialize empty graph
+
     random_graph = {}
-    #consider each vertex
-    for vertex in range(num_nodes):
-        out_neighbours = []
-        for neighbour in range(num_nodes):
-            if vertex != neighbour:
+
+    for x in range(num_nodes):
+        random_graph[x] = set([])
+
+    for x in range(num_nodes):
+        # iterate through every node
+        for y in range(num_nodes):
+            if x != y:
+                # iterate through every other node
                 random_number = random.random()
+                # get a random number
                 if random_number < prob:
-                    out_neighbours += [neighbour]        
-        #add vertex with list of out_ neighbours
-        random_graph[vertex] = set(out_neighbours)
+                    # if there should be an edge
+                    random_graph[x].add(y)
+                    random_graph[y].add(x)
+                    # add the edges to the correct places
+
     return random_graph
 
 ####################################################################################################################################
@@ -135,10 +142,17 @@ def make_PA_Graph(total_nodes, out_degree):
     """creates a PA_Graph on total_nodes where each vertex is iteratively
     connected to a number of existing nodes equal to out_degree"""
     #initialize graph by creating complete graph and trial object
-    PA_graph = make_complete_graph(out_degree)
-    trial = PATrial(out_degree)
+    PA_graph = PA.make_complete_graph(out_degree)
+    trial = PA.PATrial(out_degree)
     for vertex in range(out_degree, total_nodes):
         PA_graph[vertex] = trial.run_trial(out_degree)
+
+    for x, edges in PA_graph.items():
+        for y in list(edges):
+            # iterate through each node and it's neighbours
+            if not x in PA_graph[y]:
+                PA_graph[y].add(x)
+
     return PA_graph
 
 ####################################################################################################################################
