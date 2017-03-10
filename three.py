@@ -41,6 +41,24 @@ def make_random_graph(num_nodes, prob):
 
 ####################################################################################################################################
 
+def get_group(node, m, k):
+    """ get all nodes that are in any given group """
+
+    graph = []
+
+    for x in range(m*k):
+        graph.append(x)
+
+    group = int(node/k)
+    group_range = graph[group*m:(group+1)*m]
+
+    # print(group)
+    # print(group_range)
+
+    return group_range
+
+####################################################################################################################################
+
 def make_PA_Graph(total_nodes, out_degree):
     """creates a PA_Graph on total_nodes where each vertex is iteratively
     connected to a number of existing nodes equal to out_degree"""
@@ -70,60 +88,31 @@ def make_group_graph(m, k, p, q):
     """
 
     graph = {}
-    # this is a dictionary that stores the vertex as its key and the list of nodes it's connected to as its value
 
-    for x in range(1, (m*k) + 1):
+    for x in range(0, m*k):
         graph[x] = []
-    # iterate through the number of vertices in the graph and add to the dictionary its key and a list as the value
 
-    for x in range(1,m+1):
-        # iterate through the number of groups
-        for y in range(((x-1) * k) + 1,(x * k) + 1):
-            # iterate through the vertices in each group
-            for z in range(y + 1, (x * k) + 1):
-                # iterate through the edges it could be connected to
-                test_random = random.random()
-                # get a random number 
+    for x in range(0, m*k):
+        y = get_group(x,m,k)
+        y.remove(x)
+        for z in range(0, len(y)):
+            random_number = random.random()
 
-                if test_random < p:
-                    # if there should be an edge between the two
-                    graph[y].append(z)
-                    graph[z].append(y)
-                    # add the edges to each one
+            if random_number < p and not y[z] in graph[x] and not x in graph[y[z]]:
+                graph[x].append(y[z])
+                graph[y[z]].append(x)
 
-                    print(str(x) + " added to " + str(y))
-                    print(str(y) + " added to " + str(x))
-                    print("")
+        y = list(set(range(0,m*k)) - set(y))
+        y.remove(x)
 
-    print("#############################")
-    
-    # iterate through all the nodes in a given nodes group
-    # get some random numnber, if it passes then add this vertex to the list of connected nodes, this needs to be done both ways
+        for z in range(0, len(y)):
+            random_number = random.random()
 
-    for x in range(1,m*k+1):
-        for y in range(x,m*k+1):
-            test_random = random.random()
-
-            if test_random < q and (not y in graph[x]) and (not x in graph[y]):
-                graph[x].append(y)
-                graph[y].append(x)
-
-                print(str(x) + " added to " + str(y))
-                print(str(y) + " added to " + str(x))
-                print("")
-
-    # iterate through all nodes not in a given nodes group
-
-    # get some random number, if it passes then add this vertex to the list of connected nodes, this needs to be done both ways
-
-    # print (str(m) + ", " + str(k) + ", " + str(p) + ", " + str(q))
-    # print (graph)
+            if random_number < q and not y[z] in graph[x] and not x in graph[y[z]]:
+                graph[x].append(y[z])
+                graph[y[z]].append(x)
 
     return graph
-
-random.seed("test")
-
-print(make_group_graph(5,5,0.4,0.1))
 
 ####################################################################################################################################
 
@@ -178,47 +167,61 @@ def search_random_graph(numberOfNodes, connectivity, start, end):
 
 ####################################################################################################################################
 
-# def search_PA_graph(numberOfNodes, outDegree, start, end):
-#     """ given the number of nodes in a random graph and the integers of the start and end nodes. find the shortest path form the start node to the end node """
+def search_PA_graph(numberOfNodes, outDegree, start, end):
+    """ given the number of nodes in a random graph and the integers of the start and end nodes. find the shortest path form the start node to the end node """
 
-#     # create a PA graph
-#     # from the start node find the end node and output the number of steps
+    # create a PA graph
+    # from the start node find the end node and output the number of steps
 
-#     graph = make_PA_Graph(numberOfNodes, outDegree)
-#     print(graph)
+    graph = make_PA_Graph(numberOfNodes, outDegree)
+    print(graph)
 
-#     # if node in neighbours of start node
-#     # move to that node
-#     # else if
-#     # univisted nodes in complete subgraph
-#     # move to one of these at random
-#     # else if
-#     # unvisited nodes outside of complete subgraph
-#     # move to one of these
-#     # else if
-#     # move to random visited node in compete subgraph
-#     # else if
-#     # move to random visited node outside complete subgraph
+    startNode = start
+    currentNode = start
+    endNode = end
 
-#     startNode = start
-#     currentNode = start
-#     endNode = end
+    visitedNodes = []
+    completeSubGraph = []
+    for x in range(0, outDegree):
+        completeSubGraph.append(x)
+    print(completeSubGraph)
 
-#     visitedNodes = []
+    while currentNode != endNode:
+        visitedNodes.append(currentNode)
+        # add the current node to the list of visited nodes
+        neighbours = graph[currentNode]
+        # get a list of neighbours of the current node
+        numberOfNeighbours = len(neighbours)
+        # get the number of neighbours
+        if endNode in neighbours:
+            # if the end node is in the list of neighbours
+            currentNode = endNode
+            # we have reached the end
+        else:
+            unvisitedCompleteSubGraph = list(set(completeSubGraph) - set(visitedNodes))
+            # works out the unvisited nodes that are present in the complete subgraph
+            print("unvisted")
+            print(unvisitedCompleteSubGraph)
 
-#     while currentNode != endNode:
-#         visitedNodes.append(currentNode)
-#         # add the current node to the list of visited nodes
-#         neighbours = graph[currentNode]
-#         # get a list of neighbours of the current node
-#         numberOfNeighbours = len(neighbours)
-#         # get the number of neighbours
-#         if endNode in neighbours:
-#             # if the end node is in the list of neighbours
-#             currentNode = endNode
-#             # we have reached the end
-#         else:
-            
+            univisitedGraph = []
+            visitedCompleteSubGraph = []
+
+            if len(unvisitedCompleteSubGraph) > 0:
+                # unvisited nodes in the complete subgraph
+
+                print("1")
+            elif len(univisitedGraph) > 0:
+                # unvisited nodes outside of the complete subgraph
+                print("2")
+            elif len(visitedCompleteSubGraph) > 0:
+                # visited nodes in the complete subgraph
+                print("3")
+            else:
+                # visited node outside of the complete subgraph
+                print("4")
+
+    print(visitedNodes)
+    return len(visitedNodes)
 
 ####################################################################################################################################
 
@@ -270,28 +273,36 @@ def search_group_graph(m, k, p, q, start, end):
                     index = random.randrange(len(neighbours))
                     currentNode = neighbours[index]
 
+    else:
+        while currentNode != endNode:
+            visitedNodes.append(currentNode)
+            # add the current node to the visited nodes
+            neighbours = graph[currentNode]
+            # a list of the neighbours
+            numberOfNeighbours = len(neighbours)
+            # the number of neighbours
+            if endNode in neighbours:
+                # if the current node is connected to the end node
+                currentNode = endNode
+                # go to the end node
+            else:
+                unvisitedNodesSet = set(neighbours) - set(visitedNodes)
+                unvisitedNodes = list(unvisitedNodesSet)
+                # find all unvisited nodes of the current node
+                if len(unvisitedNodes) > 0:
+                    # if there are unvisited nodes
+                    currentNode = unvisitedNodes[random.randrange(0,len(unvisitedNodes))]
+                    # go to a random one of them
+                else:
+                    # else there are no unvisited nodes
+                    currentNode = list(neighbours)[random.randrange(len(neighbours))]
+                    # go to a random visited neighbour
+
+
     print(visitedNodes)
     return len(visitedNodes)
 
     # if there is significant q probability meaning that it is more likely to have a connection outside the group
-
-####################################################################################################################################
-
-def get_group(node, m, k):
-    """ get all nodes that are in any given group """
-
-    graph = []
-
-    for x in range(m*k):
-        graph.append(x)
-
-    group = int(node/k)
-    group_range = graph[group*m:(group+1)*m]
-
-    # print(group)
-    # print(group_range)
-
-    return group_range
 
 ####################################################################################################################################
 """
@@ -305,7 +316,7 @@ end = random.randrange(0, size)
 if start != end:
     print("Start: " + str(start) + " End: " + str(end) + " Connectivity: " + str(connectivity))
     print("Number of steps taken: " + str(search_random_graph(size,connectivity,start,end)))
-
+"""
 ####################################################################################################################################
 
 # SEARCHING IN PA 
@@ -320,7 +331,7 @@ if start != end:
     print("Number of steps taken: " + str(search_PA_graph(size,outDegree,start,end)))
 
 ####################################################################################################################################
-
+"""
 # SEARCHING IN GROUP
 
 m = 5
