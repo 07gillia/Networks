@@ -239,12 +239,12 @@ def plot_degree_distribution_all():
     plt.xlabel('Degree Distribution')
     plt.ylabel('Average Degree')
     plt.title('The Distribution')
-    plt.xlim([0,150])
+    #plt.xlim([0,150])
 
-    p_values = [0.25, 0.3, 0.35, 0.4, 0.45, 0.5]
-    p_colours = ['b','g','r','y','c']
+    p_values = [0.3, 0.35, 0.4, 0.45]
+    p_colours = ['b','g','r','y']
 
-    for p in range(0,len(p_values)-1):
+    for p in range(0,len(p_values)):
         q = 0.5 - p_values[p]
         current_dict_of_dist = average_degree_distribution_group_graphs(20, 20, p_values[p], q, 100)
 
@@ -257,6 +257,35 @@ def plot_degree_distribution_all():
 
 ####################################################################################################################################
 
+def plot_all_diameters():
+
+    p = [0,0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.45,0.5,0.55,0.6,0.65,0.7,0.75,0.8,0.85,0.9,0.95,1]
+
+    average_diameters = []
+
+    for x in range(len(p)):
+        average = 0
+        for y in range(1):
+            toAdd = diameter(make_group_graph(20,20,p[x],0.1))
+            average += toAdd
+        average_diameters.append(average/1)
+
+    plt.clf()
+    plt.xlabel('xlabel')
+    plt.ylabel('ylabel')
+    plt.title('Diameter, M = 20, K = 20, Q = 0.1')
+
+    print(p)
+    print(average_diameters)
+
+    plt.scatter(p, average_diameters, marker='x', color='r')
+    plt.savefig('Diameter.png')
+
+
+####################################################################################################################################
+
+plot_all_diameters()
+
 #graph = make_group_graph(20,20,0.1,0.1)
 
 #print(diameter(graph))
@@ -266,13 +295,13 @@ def plot_degree_distribution_all():
 #average_degree_distribution_group_graphs(20,20,0.25,0.25,100)
 
 # check plot things
-
+"""
 plot_degree_distribution_all()
 
 print ("construct group graphs with 400 vertices, divided into 20 groups of 20")
 print ("let p take the values 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, and q=0.5 - p")
 print ("for each value create 100 graphs, find on average how many vertices have degree d, and plot the distribution")
-for p in [0.25, 0.3, 0.35, 0.4, 0.45, 0.5]:
+for p in [0.3, 0.35, 0.4, 0.45]:
     print ("making the plot for p="+str(p))
     q = 0.5 - p
     current_dict_of_dist = average_degree_distribution_group_graphs(20, 20, p, q, 100)
@@ -302,4 +331,4 @@ plt.savefig('Q1_group_graph_degrees.png')
 
 print ("looking at the figures produced, notice that the shapes of the distributions are all very similar and the degrees are all very close to the average")
 print ()
-
+"""

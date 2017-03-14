@@ -159,7 +159,7 @@ def search_random_graph(numberOfNodes, connectivity, start, end):
                 # go to a random one of them
             else:
                 # else there are no unvisited nodes
-                currentNode = list(neighbours)[random.randrange(len(neighbours))]
+                currentNode = list(neighbours)[random.randrange(len(list(neighbours)))]
                 # go to a random visited neighbour
 
     print(visitedNodes)
@@ -184,7 +184,6 @@ def search_PA_graph(numberOfNodes, outDegree, start, end):
     completeSubGraph = []
     for x in range(0, outDegree):
         completeSubGraph.append(x)
-    print(completeSubGraph)
 
     while currentNode != endNode:
         visitedNodes.append(currentNode)
@@ -198,27 +197,25 @@ def search_PA_graph(numberOfNodes, outDegree, start, end):
             currentNode = endNode
             # we have reached the end
         else:
-            unvisitedCompleteSubGraph = list(set(completeSubGraph) - set(visitedNodes))
-            # works out the unvisited nodes that are present in the complete subgraph
-            print("unvisted")
-            print(unvisitedCompleteSubGraph)
-
-            univisitedGraph = []
-            visitedCompleteSubGraph = []
-
-            if len(unvisitedCompleteSubGraph) > 0:
-                # unvisited nodes in the complete subgraph
-
-                print("1")
-            elif len(univisitedGraph) > 0:
-                # unvisited nodes outside of the complete subgraph
-                print("2")
-            elif len(visitedCompleteSubGraph) > 0:
-                # visited nodes in the complete subgraph
-                print("3")
+            unvisitedNeighbours = list(set(neighbours) - set(visitedNodes))
+            completeNeighbours = list(set(graph[currentNode]) & set(completeSubGraph))
+            unvisitedCompleteNeighbours = list(set(completeNeighbours) - set(visitedNodes))
+            # unvisited nodes in the complete subgraph
+            if len(unvisitedCompleteNeighbours) > 0:
+                random_number = random.randrange(len(unvisitedCompleteNeighbours))
+                currentNode = unvisitedCompleteNeighbours[random_number]
+            # unvisited nodes outside of the complete subgraph
+            if len(unvisitedNeighbours) > 0:
+                random_number = random.randrange(len(unvisitedNeighbours))
+                currentNode = unvisitedNeighbours[random_number]
+            # visited nodes in the complete subgraph
+            if len(completeNeighbours) > 0:
+                random_number = random.randrange(len(completeNeighbours))
+                currentNode = completeNeighbours[random_number]
+            # visited node outside of the complete subgraph
             else:
-                # visited node outside of the complete subgraph
-                print("4")
+                random_number = random.randrange(len(neighbours))
+                currentNode = neighbours[random_number]
 
     print(visitedNodes)
     return len(visitedNodes)
@@ -305,44 +302,130 @@ def search_group_graph(m, k, p, q, start, end):
     # if there is significant q probability meaning that it is more likely to have a connection outside the group
 
 ####################################################################################################################################
-"""
+
 # SEARCHING IN RANDOM
 
-size = 20
-connectivity = random.random()
-start = random.randrange(0, size)
-end = random.randrange(0, size)
-
-if start != end:
-    print("Start: " + str(start) + " End: " + str(end) + " Connectivity: " + str(connectivity))
-    print("Number of steps taken: " + str(search_random_graph(size,connectivity,start,end)))
+random.seed('random')
 """
+results = {}
+
+for x in range(100):
+    results[x] = 0
+
+
+for x in range(10000):
+
+    size = 100
+    connectivity = 0.05
+
+    start = random.randrange(0, size)
+    end = random.randrange(0, size)
+
+    while start == end:
+        start = random.randrange(0, size)
+        end = random.randrange(0, size)
+
+    if start != end:
+        print("Start: " + str(start) + " End: " + str(end) + " Connectivity: " + str(connectivity))
+        numberOfSteps = search_random_graph(size,connectivity,start,end)
+        print("Number of steps taken: " + str(numberOfSteps))
+        results[numberOfSteps] = results[numberOfSteps] + 1
+
+print(results)
+
+plt.clf()
+plt.xlabel('Search Time')
+plt.ylabel('Occurrences')
+plt.title('Random')
+
+plt.scatter(list(results.keys()), list(results.values()), marker='x', color='r')
+plt.savefig('randomSearch.png')
+
+average = 0
+
+for key, value in results.items():
+    average += key * value
+
+print(average/10000)
+
 ####################################################################################################################################
 
 # SEARCHING IN PA 
 
-size = 20
-outDegree = random.randrange(1, size) # this should be tested
-start = random.randrange(0, size)
-end = random.randrange(0, size)
+results = {}
 
-if start != end:
-    print("Start: " + str(start) + " End: " + str(end) + " OutDegree: " + str(outDegree))
-    print("Number of steps taken: " + str(search_PA_graph(size,outDegree,start,end)))
+for x in range(100):
+    results[x] = 0
+
+for x in range(10000):
+
+    size = 100
+    outDegree = 15 # this should be tested
+    start = random.randrange(0, size)
+    end = random.randrange(0, size)
+
+    if start != end:
+        print("Start: " + str(start) + " End: " + str(end) + " OutDegree: " + str(outDegree))
+        numberOfSteps = search_PA_graph(size,outDegree,start,end)
+        print("Number of steps taken: " + str(numberOfSteps))
+        results[numberOfSteps] = results[numberOfSteps] + 1
+
+print(results)
+
+plt.clf()
+plt.xlabel('Search Time')
+plt.ylabel('Occurrences')
+plt.title('PA')
+
+plt.scatter(list(results.keys()), list(results.values()), marker='x', color='r')
+plt.savefig('paSearch.png')
+
+average = 0
+
+for key, value in results.items():
+    average += key * value
+
+print(average/10000)
 
 ####################################################################################################################################
 """
 # SEARCHING IN GROUP
 
-m = 5
-k = 5
-p = 0.4
-q = 0.1
-start = random.randrange(0, m*k)
-end = random.randrange(0, m*k)
+results = {}
 
-if start != end:
-    print("Start: " + str(start) + " End: " + str(end) + "          " + " M: " + str(m) + " K: " + str(k) + " P: " + str(p) + " Q: " + str(q))
-    print("Number of steps taken: " + str(search_group_graph(m, k, p, q, start, end)))
-"""
+for x in range(100):
+    results[x] = 0
+
+for x in range(1000):
+
+    m = 40
+    k = 40
+    p = 0.4
+    q = 0.1
+    start = random.randrange(0, m*k)
+    end = random.randrange(0, m*k)
+
+    if start != end:
+        print("Start: " + str(start) + " End: " + str(end) + "          " + " M: " + str(m) + " K: " + str(k) + " P: " + str(p) + " Q: " + str(q))
+        numberOfSteps = search_group_graph(m, k, p, q, start, end)
+        print("Number of steps taken: " + str(numberOfSteps))
+        results[numberOfSteps] = results[numberOfSteps] + 1
+
+print(results)
+
+plt.clf()
+plt.xlabel('Search Time')
+plt.ylabel('Occurrences')
+plt.title('Group')
+
+plt.scatter(list(results.keys()), list(results.values()), marker='x', color='r')
+plt.savefig('groupSearch.png')
+
+average = 0
+
+for key, value in results.items():
+    average += key * value
+
+print(average/1000)
+
 ####################################################################################################################################

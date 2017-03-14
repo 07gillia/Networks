@@ -232,7 +232,7 @@ for key, value in coauthorship_graph.items():
 	results_four_cycle[key] = four_cycles(coauthorship_graph, key)
 
 file = open("results_four_cycle.txt", "w")
-file.write(results_four_cycle)
+file.write(str(results_four_cycle))
 
 print("Four Cycle")
 
@@ -240,13 +240,13 @@ for key, value in coauthorship_graph.items():
 	results_five_cycle[key] = five_cycles(coauthorship_graph, key)
 
 file = open("results_five_cycle.txt", "w")
-file.write(results_five_cycle)
+file.write(str(results_five_cycle))
 
 print("Five Cycle")
 
+"""
 
-
-random_graph = make_random_graph(1559, 0.2) # EDIT need to have similar number of edges
+random_graph = make_random_graph(1559, 0.02) # EDIT need to have similar number of edges
 
 for key, value in random_graph.items():
 	results_random_four_cycle[key] = four_cycles(random_graph, key)
@@ -266,7 +266,7 @@ print("Random Five Cycle")
 
 
 
-PA_graph = make_PA_Graph(1559, 0.2) # EDIT need to have similar number of edges
+PA_graph = make_PA_Graph(1559, 35) # EDIT need to have similar number of edges
 
 for key, value in PA_graph.items():
 	results_PA_four_cycle[key] = four_cycles(PA_graph, key)
@@ -286,7 +286,7 @@ print("PA Five Cycle")
 
 
 
-group_graph = make_group_graph(40,40,0.2,0.2) # EDIT need to have similat number of edges
+group_graph = make_group_graph(40,40,0.5,0.02) # EDIT need to have similat number of edges
 
 for key, value in group_graph.items():
 	results_group_graph_four_cycle[key] = four_cycles(group_graph, key)
@@ -303,5 +303,5 @@ file = open("results_group_graph_five_cycle.txt", "w")
 file.write(results_group_graph_five_cycle)
 
 print("Group Five Cycle")
-
+"""
 ####################################################################################################################################

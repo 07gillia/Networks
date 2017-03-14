@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  8 MAR 2017 10:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  14 MAR 2017 20:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -599,7 +599,63 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutvoffset=\dimen133
 \Gm@dimlist=\toks29
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/sectsty/sectsty.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count126
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip63
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+********************************************************
+Package `algorithm2e' Release 5.1 -- october 19 2015 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (christophe.fiorio@umontpellier.fr)
+********************************************************
+\skiptotal=\skip64
+\skiplinenumber=\skip65
+\skiprule=\skip66
+\skiphlne=\skip67
+\skiptext=\skip68
+\skiplength=\skip69
+\algomargin=\skip70
+\skipalgocfslide=\skip71
+\algowidth=\dimen134
+\inoutsize=\dimen135
+\inoutindent=\dimen136
+\interspacetitleruled=\dimen137
+\interspacealgoruled=\dimen138
+\interspacetitleboxruled=\dimen139
+\algocf@ruledwidth=\skip72
+\algocf@inoutbox=\box33
+\algocf@inputbox=\box34
+\AlCapSkip=\skip73
+\AlCapHSkip=\skip74
+\algoskipindent=\skip75
+\algocf@nlbox=\box35
+\algocf@hangingbox=\box36
+\algocf@untilbox=\box37
+\algocf@skipuntil=\skip76
+\algocf@capbox=\box38
+\algoheightruledefault=\skip77
+\algoheightrule=\skip78
+\algotitleheightruledefault=\skip79
+\algotitleheightrule=\skip80
+\c@algocfline=\count127
+\c@algocfproc=\count128
+\c@algocf=\count129
+\algocf@algoframe=\box39
+\algocf@algobox=\box40
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/sectsty/sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
 )
@@ -609,72 +665,72 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 (scrartcl)              I'd suggest to use 
 (scrartcl)              package `scrlayer-scrpage'.
 (scrartcl)              Nevertheless, using requested
-(scrartcl)              package `fancyhdr' on input line 27.
+(scrartcl)              package `fancyhdr' on input line 28.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip63
-\f@ncyO@elh=\skip64
-\f@ncyO@erh=\skip65
-\f@ncyO@olh=\skip66
-\f@ncyO@orh=\skip67
-\f@ncyO@elf=\skip68
-\f@ncyO@erf=\skip69
-\f@ncyO@olf=\skip70
-\f@ncyO@orf=\skip71
+\fancy@headwidth=\skip81
+\f@ncyO@elh=\skip82
+\f@ncyO@erh=\skip83
+\f@ncyO@olh=\skip84
+\f@ncyO@orh=\skip85
+\f@ncyO@elf=\skip86
+\f@ncyO@erf=\skip87
+\f@ncyO@olf=\skip88
+\f@ncyO@orf=\skip89
 )
 (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 58.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 59.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 59.
 
  (/usr/local/texlive/2016/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 58.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 58.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 59.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 59.
 
  (/usr/local/texlive/2016/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 58.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 58.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 59.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 59.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 58.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 59.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 58.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 59.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
-\c@lstlisting=\count126
-LaTeX Info: Redefining \microtypecontext on input line 58.
+\c@lstlisting=\count130
+LaTeX Info: Redefining \microtypecontext on input line 59.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -691,16 +747,16 @@ Package microtype Info: Loading generic settings for font family
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count127
-\scratchdimen=\dimen134
-\scratchbox=\box33
-\nofMPsegments=\count128
-\nofMParguments=\count129
+\scratchcounter=\count131
+\scratchdimen=\dimen140
+\scratchbox=\box41
+\nofMPsegments=\count132
+\nofMParguments=\count133
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count130
-\MPscratchDim=\dimen135
-\MPnumerator=\count131
-\makeMPintoPDFobject=\count132
+\MPscratchCnt=\count134
+\MPscratchDim=\dimen141
+\MPnumerator=\count135
+\makeMPintoPDFobject=\count136
 \everyMPtoPDFconversion=\toks31
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -717,8 +773,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 58.
+\AtBeginShipoutBox=\box42
+Package hyperref Info: Link coloring OFF on input line 59.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -726,11 +782,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count133
+\c@section@level=\count137
 )
-LaTeX Info: Redefining \ref on input line 58.
-LaTeX Info: Redefining \pageref on input line 58.
-LaTeX Info: Redefining \nameref on input line 58.
+LaTeX Info: Redefining \ref on input line 59.
+LaTeX Info: Redefining \pageref on input line 59.
+LaTeX Info: Redefining \nameref on input line 59.
 
 (./report.out) (./report.out)
 \@outlinefile=\write3
@@ -771,7 +827,7 @@ LaTeX Info: Redefining \nameref on input line 58.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 61.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 62.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -779,7 +835,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OT1+bch on input line 61.
+LaTeX Font Info:    Try loading font information for OT1+bch on input line 62.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1bch.fd
 File: ot1bch.fd 2004/10/18 font definitions for OT1/bch.
@@ -788,25 +844,25 @@ File: ot1bch.fd 2004/10/18 font definitions for OT1/bch.
 File: mt-bch.cfg 2007/03/03 v1.5 microtype config. file: Bitstream Charter (RS)
 
 )
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 61
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 62
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 61.
+(Font)              scaled to size 13.24796pt on input line 62.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 61.
+(Font)              scaled to size 9.19998pt on input line 62.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 61.
+(Font)              scaled to size 7.35999pt on input line 62.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 61.
+(Font)              scaled to size 13.24796pt on input line 62.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 61.
+(Font)              scaled to size 9.19998pt on input line 62.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 61.
-LaTeX Font Info:    Try loading font information for U+msa on input line 61.
+(Font)              scaled to size 7.35999pt on input line 62.
+LaTeX Font Info:    Try loading font information for U+msa on input line 62.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -814,7 +870,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 61.
+LaTeX Font Info:    Try loading font information for U+msb on input line 62.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -831,7 +887,62 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 61.
+ne 62.
+
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 66.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/fourier/ts1futs.fd
+File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `futs' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+<pictures/m=k.png, id=4, 578.16pt x 433.62pt>
+File: pictures/m=k.png Graphic file (type png)
+ <use pictures/m=k.png>
+Package pdftex.def Info: pictures/m=k.png used on input line 82.
+(pdftex.def)             Requested size: 339.72597pt x 254.79478pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pictures/k=m.png, id=6, 578.16pt x 433.62pt>
+File: pictures/k=m.png Graphic file (type png)
+ <use pictures/k=m.png>
+Package pdftex.def Info: pictures/k=m.png used on input line 88.
+(pdftex.def)             Requested size: 339.72597pt x 254.79478pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pictures/m>k.png, id=7, 578.16pt x 433.62pt>
+File: pictures/m>k.png Graphic file (type png)
+ <use pictures/m>k.png>
+Package pdftex.def Info: pictures/m>k.png used on input line 96.
+(pdftex.def)             Requested size: 339.72597pt x 254.79478pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pictures/m<k.png, id=8, 578.16pt x 433.62pt>
+File: pictures/m<k.png Graphic file (type png)
+ <use pictures/m<k.png>
+Package pdftex.def Info: pictures/m<k.png used on input line 104.
+(pdftex.def)             Requested size: 339.72597pt x 254.79478pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
@@ -839,44 +950,202 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 76.
+ne 107.
+
+<pictures/diameter.png, id=9, 578.16pt x 433.62pt>
+File: pictures/diameter.png Graphic file (type png)
+ <use pictures/diameter.png>
+Package pdftex.def Info: pictures/diameter.png used on input line 114.
+(pdftex.def)             Requested size: 339.72597pt x 254.79478pt.
 
 
-Class scrartcl Warning: incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input li
-ne 81.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 87.
 [1
 
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 87.
+<pictures/otherD.png, id=18, 578.16pt x 433.62pt>
+File: pictures/otherD.png Graphic file (type png)
+ <use pictures/otherD.png>
+Package pdftex.def Info: pictures/otherD.png used on input line 122.
+(pdftex.def)             Requested size: 339.72597pt x 254.79478pt.
 
-(./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 87.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 87.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 126.
+
+
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 131.
+
+<pictures/4cycle.png, id=19, 901.3675pt x 479.7925pt>
+File: pictures/4cycle.png Graphic file (type png)
+
+<use pictures/4cycle.png>
+Package pdftex.def Info: pictures/4cycle.png used on input line 136.
+(pdftex.def)             Requested size: 339.72597pt x 180.83687pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <./pictures/m=k.png>]
+
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 144.
+
+<pictures/5cycle.png, id=28, 898.35625pt x 464.73625pt>
+File: pictures/5cycle.png Graphic file (type png)
+
+<use pictures/5cycle.png>
+Package pdftex.def Info: pictures/5cycle.png used on input line 149.
+(pdftex.def)             Requested size: 339.72597pt x 175.74356pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 155.
+
+
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 159.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+ []
+
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 173.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 174.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 174.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 174.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 174.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 174.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 174.
+<pictures/randomSearch.png, id=29, 578.16pt x 433.62pt>
+File: pictures/randomSearch.png Graphic file (type png)
+
+<use pictures/randomSearch.png>
+Package pdftex.def Info: pictures/randomSearch.png used on input line 179.
+(pdftex.def)             Requested size: 339.72597pt x 254.79478pt.
+ [3 <./pictures/k=m.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 184.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
+
+ []
+
+<pictures/paSearch.png, id=39, 578.16pt x 433.62pt>
+File: pictures/paSearch.png Graphic file (type png)
+
+<use pictures/paSearch.png>
+Package pdftex.def Info: pictures/paSearch.png used on input line 213.
+(pdftex.def)             Requested size: 339.72597pt x 254.79478pt.
+ [4 <./pictures/m>k.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 218.
+
+[5 <./pictures/m<k.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+
+ []
+
+<pictures/groupSearch.png, id=59, 578.16pt x 433.62pt>
+File: pictures/groupSearch.png Graphic file (type png)
+
+<use pictures/groupSearch.png>
+Package pdftex.def Info: pictures/groupSearch.png used on input line 263.
+(pdftex.def)             Requested size: 339.72597pt x 254.79478pt.
+ [6 <./pictures/diameter.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \vbox (189.03421pt too high) has occurred while \output is active []
+
+
+[7 <./pictures/otherD.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 271.
+ [8 <./pictures/4cycle.png> <./pictures/5cycle.png>] [9 <./pictures/randomSearc
+h.png> <./pictures/paSearch.png>] [10 <./pictures/groupSearch.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 271.
+ (./report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 271.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 271.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 87.
- ) 
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 271.
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 1061 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 12487 strings out of 493014
- 197569 string characters out of 6133351
- 400070 words of memory out of 5000000
- 15793 multiletter control sequences out of 15000+600000
- 58283 words of font info for 89 fonts, out of 8000000 for 9000
+ 13805 strings out of 493014
+ 218101 string characters out of 6133351
+ 440749 words of memory out of 5000000
+ 16886 multiletter control sequences out of 15000+600000
+ 108944 words of font info for 229 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,51p,8509b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2016/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb>
-Output written on report.pdf (1 page, 20654 bytes).
+ 41i,18n,51p,8509b,2605s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc
+}</usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on report.pdf (10 pages, 350332 bytes).
 PDF statistics:
- 21 PDF objects out of 1000 (max. 8388607)
- 16 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 20993 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 122 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
+ 37 named destinations out of 1000 (max. 500000)
+ 44088 words of extra memory for PDF output out of 51595 (max. 10000000)
 
