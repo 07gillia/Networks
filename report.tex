@@ -76,13 +76,13 @@ In theory at higher values of p and lower values of q the structure of the graph
 
 In the first round of testing we want m and k to be equal, m = 20, k = 20, p = [0.45, 0.4, 0.35, 0.3], and q = [0.05, 0.1, 0.15, 0.2]. The degree distribution is shown in figure 0.1.
 
-\begin{figure}[h]
+\begin{figure}[p]
 \center
 \caption{M = 20, K = 20, with [P,Q] varying: [0.3,0.2], [0.35,0.15], [0.4,0.1], [0.45,0.05] respectively.}
 \includegraphics[width=0.75\textwidth]{pictures/m=k.png}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[p]
 \center
 \caption{M = 5, K = 5, with [P,Q] varying: [0.3,0.2], [0.35,0.15], [0.4,0.1], [0.45,0.05] respectively.}
 \includegraphics[width=0.75\textwidth]{pictures/k=m.png}
@@ -90,7 +90,7 @@ In the first round of testing we want m and k to be equal, m = 20, k = 20, p = [
 
 Second round of testing, m > k, m = 20, k = 5, p = [0.45, 0.4, 0.35, 0.3], and q = [0.05, 0.1, 0.15, 0.2]. The degree distribution is shown in figure 0.2.
 
-\begin{figure}[h]
+\begin{figure}[p]
 \center
 \caption{M = 5, K = 20, with [P,Q] varying: [0.3,0.2], [0.35,0.15], [0.4,0.1], [0.45,0.05] respectively.}
 \includegraphics[width=0.75\textwidth]{pictures/m>k.png}
@@ -98,7 +98,7 @@ Second round of testing, m > k, m = 20, k = 5, p = [0.45, 0.4, 0.35, 0.3], and q
 
 Third round of testing, m < k, m = 5, k = 20, p = [0.45, 0.4, 0.35, 0.3], and q = [0.05, 0.1, 0.15, 0.2]. The degree distribution is shown in figure 0.3.
 
-\begin{figure}[h]
+\begin{figure}[p]
 \center
 \caption{M = 20, K = 5, with [P,Q] varying: [0.3,0.2], [0.35,0.15], [0.4,0.1], [0.45,0.05] respectively.}
 \includegraphics[width=0.75\textwidth]{pictures/m<k.png}
@@ -108,7 +108,7 @@ Third round of testing, m < k, m = 5, k = 20, p = [0.45, 0.4, 0.35, 0.3], and q 
 
 Using the values m = 50, k = 5, q = 0.1, run an average diameter over 100 graphs with variable p values gives the graph figure 0.5.
 
-\begin{figure}[h]
+\begin{figure}[p]
 \center
 \caption{}
 \includegraphics[width=0.75\textwidth]{pictures/diameter.png}
@@ -116,7 +116,7 @@ Using the values m = 50, k = 5, q = 0.1, run an average diameter over 100 graphs
 
 As the graph shows the average over all values of p is around 3 and it will converge to 3 for higher values of p. At higher P values there is a higher probability that there is an intra-group connection, whilst the Q value is fixed, meaning that there is a set probability of an inter-group connection. With higher values of probability for intra-group connections this will reduce the possible diameter due to the fact that if each group was strongly connected then the average path between any pair of nodes would be two that were in separate groups but unconnected, thus the travel to any node in the start group that is connected to any node in the target group which would then be connected to the target node, there will be a few exceptions such as two nodes in two groups that have no nodes connected, this is why the average for p = 1 is slightly above 3. Whilst we can see an obvious trend in the graph, due to the parameters chosen this is highly magnified, with most other values that were tested we see a much flatter result, shown in figure 0.6.
 
-\begin{figure}[h]
+\begin{figure}[p]
 \center
 \caption{}
 \includegraphics[width=0.75\textwidth]{pictures/otherD.png}
@@ -130,7 +130,7 @@ and k is joined to 1 (it does not matter whether or not other vertices are adjac
 
 \subsection*{Four Cycles}
 
-\begin{figure}[h]
+\begin{figure}[p]
 \center
 \caption{}
 \includegraphics[width=0.75\textwidth]{pictures/4cycle.png}
@@ -143,7 +143,7 @@ Finally the random graph, parameters nodes = 1600 and probability = 0.02, shows 
 
 \subsection*{Five Cycles}
 
-\begin{figure}[h]
+\begin{figure}[p]
 \center
 \caption{}
 \includegraphics[width=0.75\textwidth]{pictures/5cycle.png}
@@ -173,7 +173,7 @@ By their definition random graphs are random and due to this the search strategy
  \caption{Random Strategy}
 \end{algorithm}
 
-\begin{figure}[h]
+\begin{figure}[p]
 \center
 \caption{}
 \includegraphics[width=0.75\textwidth]{pictures/randomSearch.png}
@@ -207,13 +207,13 @@ A PA graph is a fully connected graph that then has more nodes added to it. This
  \caption{PA Strategy}
 \end{algorithm}
 
-\begin{figure}[h]
+\begin{figure}[p]
 \center
 \caption{}
 \includegraphics[width=0.75\textwidth]{pictures/paSearch.png}
 \end{figure}
 
-For a PA graph with 100 nodes and put degree of 15, the most frequent search time is two and the average search time is 2.27.
+For a PA graph with 100 nodes and put degree of 15, the most frequent search time is two and the average search time is 2.27. The results are shown in figure 0.10.
 
 \subsection*{Group}
 
@@ -257,7 +257,7 @@ We will take into consideration the predetermined structure of the graph in the 
  \caption{Group Strategy}
 \end{algorithm}
 
-\begin{figure}[h]
+\begin{figure}[p]
 \center
 \caption{}
 \includegraphics[width=0.75\textwidth]{pictures/groupSearch.png}

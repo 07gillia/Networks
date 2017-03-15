@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  14 MAR 2017 20:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.6)  15 MAR 2017 10:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -914,17 +914,11 @@ File: pictures/m=k.png Graphic file (type png)
 Package pdftex.def Info: pictures/m=k.png used on input line 82.
 (pdftex.def)             Requested size: 339.72597pt x 254.79478pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 <pictures/k=m.png, id=6, 578.16pt x 433.62pt>
 File: pictures/k=m.png Graphic file (type png)
  <use pictures/k=m.png>
 Package pdftex.def Info: pictures/k=m.png used on input line 88.
 (pdftex.def)             Requested size: 339.72597pt x 254.79478pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 <pictures/m>k.png, id=7, 578.16pt x 433.62pt>
 File: pictures/m>k.png Graphic file (type png)
@@ -932,17 +926,11 @@ File: pictures/m>k.png Graphic file (type png)
 Package pdftex.def Info: pictures/m>k.png used on input line 96.
 (pdftex.def)             Requested size: 339.72597pt x 254.79478pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 <pictures/m<k.png, id=8, 578.16pt x 433.62pt>
 File: pictures/m<k.png Graphic file (type png)
  <use pictures/m<k.png>
 Package pdftex.def Info: pictures/m<k.png used on input line 104.
 (pdftex.def)             Requested size: 339.72597pt x 254.79478pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
@@ -958,21 +946,17 @@ File: pictures/diameter.png Graphic file (type png)
 Package pdftex.def Info: pictures/diameter.png used on input line 114.
 (pdftex.def)             Requested size: 339.72597pt x 254.79478pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [1
 
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<pictures/otherD.png, id=18, 578.16pt x 433.62pt>
+[2 <./pictures/m=k.png> <./pictures/k=m.png>] [3 <./pictures/m>k.png> <./pictur
+es/m<k.png>] <pictures/otherD.png, id=34, 578.16pt x 433.62pt>
 File: pictures/otherD.png Graphic file (type png)
- <use pictures/otherD.png>
+
+<use pictures/otherD.png>
 Package pdftex.def Info: pictures/otherD.png used on input line 122.
 (pdftex.def)             Requested size: 339.72597pt x 254.79478pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
@@ -990,17 +974,13 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 131.
 
-<pictures/4cycle.png, id=19, 901.3675pt x 479.7925pt>
+<pictures/4cycle.png, id=35, 901.3675pt x 479.7925pt>
 File: pictures/4cycle.png Graphic file (type png)
 
 <use pictures/4cycle.png>
 Package pdftex.def Info: pictures/4cycle.png used on input line 136.
 (pdftex.def)             Requested size: 339.72597pt x 180.83687pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[2 <./pictures/m=k.png>]
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
@@ -1009,15 +989,12 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 144.
 
-<pictures/5cycle.png, id=28, 898.35625pt x 464.73625pt>
+<pictures/5cycle.png, id=36, 898.35625pt x 464.73625pt>
 File: pictures/5cycle.png Graphic file (type png)
 
 <use pictures/5cycle.png>
 Package pdftex.def Info: pictures/5cycle.png used on input line 149.
 (pdftex.def)             Requested size: 339.72597pt x 175.74356pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
@@ -1040,6 +1017,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
+[4] [5 <./pictures/diameter.png> <./pictures/otherD.png>] [6 <./pictures/4cycle
+.png> <./pictures/5cycle.png>]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 173.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1054,15 +1033,13 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 7.63599pt on input line 174.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 174.
-<pictures/randomSearch.png, id=29, 578.16pt x 433.62pt>
+
+<pictures/randomSearch.png, id=62, 578.16pt x 433.62pt>
 File: pictures/randomSearch.png Graphic file (type png)
 
 <use pictures/randomSearch.png>
 Package pdftex.def Info: pictures/randomSearch.png used on input line 179.
 (pdftex.def)             Requested size: 339.72597pt x 254.79478pt.
- [3 <./pictures/k=m.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
@@ -1077,16 +1054,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
-<pictures/paSearch.png, id=39, 578.16pt x 433.62pt>
+<pictures/paSearch.png, id=63, 578.16pt x 433.62pt>
 File: pictures/paSearch.png Graphic file (type png)
 
 <use pictures/paSearch.png>
 Package pdftex.def Info: pictures/paSearch.png used on input line 213.
 (pdftex.def)             Requested size: 339.72597pt x 254.79478pt.
- [4 <./pictures/m>k.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+ [7] [8 <./pictures/randomSearch.png> <./pictures/paSearch.png>]
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
@@ -1095,31 +1069,23 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 218.
 
-[5 <./pictures/m<k.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
-<pictures/groupSearch.png, id=59, 578.16pt x 433.62pt>
+<pictures/groupSearch.png, id=84, 578.16pt x 433.62pt>
 File: pictures/groupSearch.png Graphic file (type png)
 
 <use pictures/groupSearch.png>
 Package pdftex.def Info: pictures/groupSearch.png used on input line 263.
 (pdftex.def)             Requested size: 339.72597pt x 254.79478pt.
- [6 <./pictures/diameter.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \vbox (189.03421pt too high) has occurred while \output is active []
-
-
-[7 <./pictures/otherD.png>]
+ [9]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 271.
- [8 <./pictures/4cycle.png> <./pictures/5cycle.png>] [9 <./pictures/randomSearc
-h.png> <./pictures/paSearch.png>] [10 <./pictures/groupSearch.png>]
+ [10] [11 <./pictures/groupSearch.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 271.
- (./report.aux)
+
+(./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 271.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 271.
 Package rerunfilecheck Info: File `report.out' has not changed.
@@ -1131,8 +1097,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 271.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13805 strings out of 493014
- 218101 string characters out of 6133351
+ 13806 strings out of 493014
+ 218108 string characters out of 6133351
  440749 words of memory out of 5000000
  16886 multiletter control sequences out of 15000+600000
  108944 words of font info for 229 fonts, out of 8000000 for 9000
@@ -1142,10 +1108,10 @@ Here is how much of TeX's memory you used:
 }</usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/
 local/texlive/2016/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/t
 exlive/2016/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on report.pdf (10 pages, 350332 bytes).
+Output written on report.pdf (11 pages, 349652 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
- 37 named destinations out of 1000 (max. 500000)
+ 126 PDF objects out of 1000 (max. 8388607)
+ 87 compressed objects within 1 object stream
+ 38 named destinations out of 1000 (max. 500000)
  44088 words of extra memory for PDF output out of 51595 (max. 10000000)
 
